@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <tittle></tittle>
+        <link rel="stylesheet" href="calculator.css"/>
+        <script src="calculator.js" defer></script>
+    </head>
+    <body>
+            <input id="inputBar" name="inputBar" type="text" readonly>
+            <label for="inputBar"></label>
+        <div class="row">
+            <button class="numbers" value="7" onclick="display('7')" type="button"><b>7</b></button>
+            <button class="numbers" value="8" onclick="display('8')" type="button"><b>8</b></button>
+            <button class="numbers" value="9" onclick="display('9')" type="button"><b>9</b></button>
+            <button class="numbers" value="/" onclick="display('/')" id="specialsigns" type="button"><b>/</b></button>
+            <button class="numbers" value="4" onclick="display('4')" type="button"><b>4</b></button>
+            <button class="numbers" value="5" onclick="display('5')" type="button"><b>5</b></button>
+            <button class="numbers" value="6" onclick="display('6')" type="button"><b>6</b></button>
+            <button class="numbers" value="*" onclick="display('*')" id="specialsigns" type="button"><b>*</b></button>
+            <button class="numbers" value="1" onclick="display('1')" type="button"><b>1</b></button>
+            <button class="numbers" value="2" onclick="display('2')" type="button"><b>2</b></button>
+            <button class="numbers" value="3" onclick="display('3')" type="button"><b>3</b></button>
+            <button class="numbers" value="-" onclick="display('-')" id="specialsigns" type="button"><b>-</b></button>
+            <button class="numbers" value="0" onclick="display('0')" type="button"><b>0</b></button>
+            <button class="numbers" value="AC" onclick="clearscreen()" type="button"><b>AC</b></button>
+            <button class="numbers" value="=" onclick="solve()" type="button"><b>=</b></button>
+            <button class="numbers" value="+" onclick="display('+')" id="specialsigns" type="button"><b>+</b></button>
+        </div>
+    </body>
+</html>
