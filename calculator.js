@@ -1,15 +1,26 @@
+const displayInput = document.getElementById('inputBar');
+const operators = ['+','-','/','*'];
+
+
+
 function display(val) {
-    document.getElementById('inputBar').value += val;
-    return val;
+    const lastInputElement = displayInput.value.slice(-1);
+    if (!lastInputElement && operators.includes(val)) {
+        return;
+    } else if (operators.includes(lastInputElement) && operators.includes(val)) {
+        return;
+    }
+
+    displayInput.value += val;
 }
 function solve () {
-    let x = document.getElementById('inputBar').value;
-    let y = eval(x);
-    document.getElementById('inputBar').value = y;
-    return y;
+    const inputValue = displayInput.value;
+    const result = eval(inputValue);
+
+    displayInput.value = result;
 }
 function clearscreen () {
-    document.getElementById('inputBar').value = '';
+    displayInput.value = '';
 }
 
 
